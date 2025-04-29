@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class App {
     public static void main(String[] args) {
 
@@ -5,6 +7,18 @@ public class App {
         int[] arregloBurbuja = { 34, 2, 10, 6, 7, 5, 1, 15 };
         int[] arregloSeleccion = { 34, 2, 10, 6, 7, 5, 1, 15 };
         int[] arregloInsercion = { 34, 2, 10, 6, 7, 5, 1, 15 };
+
+
+        System.out.println("\n=== Tiempo ===");
+        Benchmarking benchmarking = new Benchmarking();
+        int[] arregloGrande = benchmarking.generarArregloAleatorio(10000);
+
+        Runnable tareaBurbuja = () -> ordenador.burbujaTradicional(Arrays.copyOf(arregloGrande, arregloGrande.length));
+        double tiempoBurbujaNano = benchmarking.medirConNanoTime(tareaBurbuja);
+        double tiempoBurbujaMili = benchmarking.medirConCurrenTime(tareaBurbuja);
+
+        System.out.println("BurbujaTradicional - Tiempo en nanosegundos: " + tiempoBurbujaNano + " ms");
+        System.out.println("BurbujaTradicional - Tiempo en milisegundos: " + tiempoBurbujaMili + " s");
 
         // Insctucciones:
         // Todas las llamadas a los metodos deberan estar descomentadas y se debera
