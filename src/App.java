@@ -15,47 +15,62 @@ public class App {
         /// de ellos y resolviendo.
 
         /// Anotar en cada metodo el error encontrado y como lo cambio en TEXTO
-
+        /// 
         // Metodo burbujaTradicional
+        ///     El error no habia una instancia
+        /// 
+        ///     Para resolver solo se llamo se instancio llamando a la clase y al constructor
+        MetodosOrdenamiento burbujaTradicional=new MetodosOrdenamiento();
         int[] arregloBurbujaOrdenado1 = ordenador.burbujaTradicional(arregloBurbuja);
+        System.out.println("Resultado burbuja tradicional Metodo 1 : " +
+        java.util.Arrays.toString(arregloBurbujaOrdenado1));
+
+        ///     El error fue que se instanciaba correctamente llamando a una clase que no existe
+        ///     ademas que faltaba llamar al constructor de la clase para guardar el objeto
+        /// 
+        ///     Para resolver solo se llamo con el verdadero nombre de la clase MetodosOrdenamiento y agregar el constructor
+
+        MetodosOrdenamiento burbujaTradicionalSegundo=new MetodosOrdenamiento();
+        int[] arregloBurbujaOrdenado2 = ordenador.burbujaTradicionalSegundo(arregloBurbuja);
+        System.out.println( "Resultado burbuja tradicional Metodo 2: " +
+        java.util.Arrays.toString(arregloBurbujaOrdenado2));
+
+        ///     El error fue que se instanciaba correctamente llamando a una clase que no existe
+        ///     ademas que faltaba llamar al constructor de la clase para guardar el objeto
+        /// 
+        ///     Para resolver solo se llamo con el verdadero nombre de la clase MetodosOrdenamiento y agregar el constructor
+
+        MetodosOrdenamiento burbujaTradicionalTercero=new MetodosOrdenamiento();
+        int[] arregloBurbujaOrdenado3 = ordenador.burbujaTradicionalTercero(arregloBurbuja);
+        System.out.println( "Resultado burbuja tradicional Metodo 3: " +
+        java.util.Arrays.toString(arregloBurbujaOrdenado3));
+
+         ///     El error fue que se instanciaba correctamente llamando a una clase que no existe
+        ///     ademas que faltaba llamar al constructor de la clase para guardar el objeto
+        /// 
+        ///     Para resolver solo se llamo con el verdadero nombre de la clase MetodosOrdenamiento y agregar el constructor
+
+        MetodosOrdenamiento seleccionPrimero=new MetodosOrdenamiento();
+        int[] arregloSeleccionOrdenado1 = ordenador.seleccionPrimero(arregloSeleccion);
+        System.out.println("Resultado selección Metodo 1: " +
+        java.util.Arrays.toString(arregloSeleccionOrdenado1));
+
+         ///     El error fue que se instanciaba correctamente llamando a una clase que no existe
+        ///     ademas que faltaba llamar al constructor de la clase para guardar el objeto
+        /// 
+        ///     Para resolver solo se llamo con el verdadero nombre de la clase MetodosOrdenamiento y agregar el constructor
+
+        MetodosOrdenamiento seleccionSegundo=new MetodosOrdenamiento();
+        int[] arregloSeleccionOrdenado2 = ordenador.seleccionSegundo(arregloSeleccion);
+        System.out.println( "Resultado selección Metodo 2: " +
+        java.util.Arrays.toString(arregloSeleccionOrdenado2));
+
+        MetodosOrdenamiento seleccionTercero=new MetodosOrdenamiento();
+        int[] arregloSeleccionOrdenado3 =
+        ordenador.seleccionTercero(arregloSeleccion);
         System.out.println(
-                "Resultado burbuja tradicional Metodo 1 : " +
-                        java.util.Arrays.toString(arregloBurbujaOrdenado1));
-
-        // // Metodo burbujaTradicionalSegundo
-        // int[] arregloBurbujaOrdenado2 =
-        // ordenador.burbujaTradicionalSegundo(arregloBurbuja);
-        // System.out.println(
-        // "Resultado burbuja tradicional Metodo 2: " +
-        // java.util.Arrays.toString(arregloBurbujaOrdenado2));
-
-        // // // Metodo burbujaTradicionalTercero
-        // int[] arregloBurbujaOrdenado3 =
-        // ordenador.burbujaTradicionalTercero(arregloBurbuja);
-        // System.out.println(
-        // "Resultado burbuja tradicional Metodo 3: " +
-        // java.util.Arrays.toString(arregloBurbujaOrdenado3));
-
-        // Metodo seleccionPrimero
-        // int[] arregloSeleccionOrdenado1 =
-        // ordenador.seleccionPrimero(arregloSeleccion);
-        // System.out.println(
-        // "Resultado selección Metodo 1: " +
-        // java.util.Arrays.toString(arregloSeleccionOrdenado1));
-
-        // Metodo seleccionSegundo
-        // int[] arregloSeleccionOrdenado2 =
-        // ordenador.seleccionSegundo(arregloSeleccion);
-        // System.out.println(
-        // "Resultado selección Metodo 2: " +
-        // java.util.Arrays.toString(arregloSeleccionOrdenado2));
-
-        // // Metodo seleccionTercero
-        // int[] arregloSeleccionOrdenado3 =
-        // ordenador.seleccionTercero(arregloSeleccion);
-        // System.out.println(
-        // "Resultado selección Metodo 3: " +
-        // java.util.Arrays.toString(arregloSeleccionOrdenado3));
+        "Resultado selección Metodo 3: " +
+         java.util.Arrays.toString(arregloSeleccionOrdenado3));
 
         // // Metodo insercionPrimero
         // int[] arregloInsercionOrdenado1 =
