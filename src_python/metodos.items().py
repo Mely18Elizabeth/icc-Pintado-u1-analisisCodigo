@@ -1,0 +1,5 @@
+metodos.items()
+
+{
+    
+}
